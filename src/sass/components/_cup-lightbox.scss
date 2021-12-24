@@ -1,0 +1,11 @@
+.basicLightbox {
+  display: block;
+  background: transparent;
+  z-index: 1;
+}
+
+.basicLightbox__placeholder,
+.basicLightbox--visible .basicLightbox__placeholder {
+  height: 100vh;
+  transform: none;
+}

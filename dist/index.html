@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLS Cup</title>
+  <link rel="stylesheet" href="/src.e31bb0bc.css"></head>
+  <body class="page">
+    <!-- Cup Lightbox Template -->
+    <template id="cup-lightbox-template">
+      <!-- Lightbox Button close -->
+      <button class="btn-close btn-close-js">
+        <span class="btn-close__circle">
+          <svg class="btn-close__icon" width="22" height="22">
+            <use href="/icons.2d421eb7.svg#close"></use>
+          </svg>
+        </span>
+      </button>
+
+      <!-- Button watch -->
+      <button class="btn-watch btn-watch-js" type="button">Play</button>
+
+      <!-- Button Video -->
+      <button class="button-video button-video-js" type="button">
+        <span class="button-video__circle">
+          <span class="button-video__circle-inner">
+            <svg class="button-video__icon" width="39" height="39">
+              <use href="/icons.2d421eb7.svg#plus"></use>
+            </svg>
+          </span>
+        </span>
+        Watch TV spot
+      </button>
+
+      <!-- Transition Frame -->
+      <div class="transition">
+        <div class="transition__bg transition__bg--left">
+          <img class="logo logo--portland" src="/portland-logo.efc294ba.png" alt="Portland team logo" width="403" height="403">
+        </div>
+
+        <div class="transition__bg transition__bg--right">
+          <img class="logo logo--dallas" src="/dallas-logo.4dffc7bd.png" alt="Dallas team logo" width="403" height="403">
+        </div>
+
+        <b class="slogan">
+          <span class="one">One</span>
+          <span class="game">game</span>
+          <span class="glory">to glory</span>
+        </b>
+      </div>
+
+      <!-- Teams Frame -->
+      <div class="teams">
+        <div class="triangle_black"></div>
+
+        <div class="content">
+          <h2 class="main_title">
+            <span class="main_title--part">Portland Timbers</span>
+            <span class="main_title--part">vs</span>
+            <span class="main_title--part">FC Dallas</span>
+          </h2>
+
+          <p class="date">
+            December 6
+            <span class="date--super">th</span>
+            <span class="date--line"></span>
+            <span class="time">3PM ET</span>
+          </p>
+
+          <p class="tune_in">
+            <span class="tune-descr">Live on</span>
+
+            <img src="/tune_in_fs1.f1172297.png" alt="tune in" width="129" height="57">
+
+            <span class="tune_plus">+</span>
+
+            <img src="/tune_in_uni.b2830c5f.png" alt="tune in" width="157" height="57">
+          </p>
+
+          <img class="logo_cup" src="/logo_cup.2ef920ba.png" alt="MLS Cup" width="437" height="366">
+        </div>
+      </div>
+
+      <!-- Cup Hoist Frame -->
+      <div class="cup-hoist">
+        <img class="cup-hoist__img" src="/cup-hoist.4afbcad5.png" alt="Cup hoist" width="100%">
+
+        <!-- Confetti -->
+        <!-- <img
+          id="canvas"
+          src="./images/confetti/black-big.png"
+          alt="confetti"
+          width="33"
+          height="17"
+        /> -->
+      </div>
+
+      <!-- Video Lightbox -->
+      <div class="video-lightbox">
+        <video id="video">
+          <source src="/video.ed3cc8d5.mp4" type="video/mp4">
+        </video>
+      </div>
+    </template>
+
+    <!-- Script -->
+    <script src="/src.e31bb0bc.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+// Cup Hoist Frame
+.cup-hoist {
+  height: 100%;
+  transform: translateY(100vh);
+  pointer-events: none;
+
+  .basicLightbox--visible.teams-is-hidden & {
+    background-image: linear-gradient(transparent, #00000099);
+    transform: translateY(0);
+    transition: transform $cup-hoist-animation;
+  }
+}
+
+.cup-hoist__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+//
+.canvas {
+  width: 30px;
+  height: 30px;
+  background-color: $accent-bg-color;
+}

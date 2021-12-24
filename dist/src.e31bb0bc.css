@@ -1,0 +1,747 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+	margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+	font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+	height: 0; /* 1 */
+	color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+	text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	text-indent: 0; /* 1 */
+	border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}
+
+.basicLightbox{position:fixed;display:flex;justify-content:center;align-items:center;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,.8);opacity:.01;transition:opacity .4s ease;z-index:1000;will-change:opacity}.basicLightbox--visible{opacity:1}.basicLightbox__placeholder{max-width:100%;transform:scale(.9);transition:transform .4s ease;z-index:1;will-change:transform}.basicLightbox__placeholder>iframe:first-child:last-child,.basicLightbox__placeholder>img:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{display:block;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;max-width:95%;max-height:95%}.basicLightbox__placeholder>iframe:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{pointer-events:auto}.basicLightbox__placeholder>img:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{width:auto;height:auto}.basicLightbox--iframe .basicLightbox__placeholder,.basicLightbox--img .basicLightbox__placeholder,.basicLightbox--video .basicLightbox__placeholder{width:100%;height:100%;pointer-events:none}.basicLightbox--visible .basicLightbox__placeholder{transform:scale(1)}
+@font-face {
+  font-family: "DINNextLTPro";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("DINNextLTPro Heavy"), local("DINNextLTPro-Heavy"), url(/DINNextLTPro-Heavy.257b3456.woff) format("woff");
+}
+@font-face {
+  font-family: "DINNextLTPro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("DINNextLTPro Bold"), local("DINNextLTPro-Bold"), url(/DINNextLTPro-Bold.385881f2.woff) format("woff");
+}
+@font-face {
+  font-family: "DINNextLTPro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("DINNextLTPro Medium"), local("DINNextLTPro-Medium"), url(/DINNextLTPro-Medium.e79bad02.woff) format("woff");
+}
+@font-face {
+  font-family: "DINNextLTPro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("DINNextLTPro Regular"), local("DINNextLTPro-Regular"), url(/DINNextLTPro-Regular.76df5605.woff) format("woff");
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.page {
+  min-height: 100vh;
+  font-family: "DINNextLTPro";
+  color: #000000;
+  background-image: url(/desktop_bg.410107bd.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  overflow-y: overlay;
+}
+.page.lightbox-open {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.basicLightbox {
+  display: block;
+  background: transparent;
+  z-index: 1;
+}
+
+.basicLightbox__placeholder,
+.basicLightbox--visible .basicLightbox__placeholder {
+  height: 100vh;
+  transform: none;
+}
+
+.btn-close {
+  position: fixed;
+  z-index: 5;
+  top: 10px;
+  right: 14px;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-close__circle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.btn-close__icon {
+  transform: rotate(45deg);
+}
+
+.cup-hoist {
+  height: 100%;
+  transform: translateY(100vh);
+  pointer-events: none;
+}
+.basicLightbox--visible.teams-is-hidden .cup-hoist {
+  background-image: linear-gradient(transparent, #00000099);
+  transform: translateY(0);
+  transition: transform 2400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cup-hoist__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.canvas {
+  width: 30px;
+  height: 30px;
+  background-color: #d0ad68;
+}
+
+.transition {
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.transition__bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 2000ms ease-in;
+}
+.transition__bg--left {
+  left: 0;
+  background-image: url("/portland_bg.93071424.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translateX(-100vw);
+}
+.transition__bg--right {
+  right: 0;
+  background-image: url("/dallas_bg.c0c236c8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translateX(100vw);
+}
+.basicLightbox--visible.teams-is-hidden .transition__bg {
+  transform: translateX(0);
+  transition: transform 2000ms ease-in 3000ms;
+}
+
+.logo {
+  position: absolute;
+  top: 28vh;
+  transform: scale(2.5);
+  opacity: 0;
+  transition: opacity 600ms ease-in 7800ms, transform 600ms ease-in 8000ms;
+}
+.logo--portland {
+  left: 9.2vw;
+}
+.logo--dallas {
+  right: 9.2vw;
+}
+.basicLightbox--visible .logo {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  line-height: 0.8;
+  text-transform: uppercase;
+  color: #ffffff;
+  filter: drop-shadow(6.691px 7.431px 16px #000000);
+  opacity: 0;
+  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.basicLightbox--visible.teams-is-hidden .slogan {
+  opacity: 1;
+}
+
+.one {
+  font-size: 308px;
+  opacity: 0;
+}
+.basicLightbox--visible .one {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 5000ms;
+}
+
+.game {
+  font-size: 218px;
+  opacity: 0;
+}
+.basicLightbox--visible .game {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 6000ms;
+}
+
+.glory {
+  font-size: 128px;
+  opacity: 0;
+}
+.basicLightbox--visible .glory {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 7000ms;
+}
+
+.teams {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(circle at 63.2vw center, transparent, #000000 50vw), url("/bg-cup.665e8615.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
+}
+.teams-is-hidden .teams {
+  display: none;
+}
+
+.triangle_black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 63.2vw solid #000000;
+  border-right: 63.2vw solid transparent;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.8vw;
+  padding-bottom: 1.8vw;
+  padding-left: 1.6vw;
+}
+
+.main_title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+  font-weight: 800;
+  font-size: 83px;
+  text-transform: uppercase;
+}
+
+.main_title--part {
+  height: 83px;
+  padding-left: 6px;
+  padding-right: 64px;
+  margin-right: auto;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+}
+
+.date {
+  margin-bottom: 26px;
+  font-size: 47px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.date--super {
+  margin-right: 16px;
+  font-size: 26px;
+  vertical-align: super;
+}
+
+.date--line {
+  display: inline-block;
+  width: 6px;
+  height: 36px;
+  margin-right: 16px;
+  background-color: #d0ad68;
+}
+
+.time {
+  font-weight: 800;
+}
+
+.tune_in {
+  width: 566px;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tune-descr,
+.tune_plus {
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d0ad68;
+}
+
+.tune_plus {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.logo_cup {
+  margin-top: auto;
+}
+
+.button-video {
+  position: fixed;
+  z-index: 2;
+  top: 110px;
+  right: 250px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  filter: drop-shadow(0.209px 1.989px 1.5px rgba(0, 0, 0, 0.75));
+  border: none;
+  cursor: pointer;
+}
+.basicLightbox--visible.teams-is-hidden .button-video {
+  display: none;
+}
+
+.button-video__circle {
+  width: 109px;
+  height: 109px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.button-video__circle-inner {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+
+.button-video__icon {
+  transform: rotate(0);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.video-lightbox-open .button-video__icon {
+  transform: rotate(45deg);
+}
+
+.video-lightbox {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: scroll;
+  opacity: 0;
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.video-lightbox--open {
+  opacity: 1;
+}
+
+.btn-watch {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  width: 152px;
+  height: 152px;
+  cursor: pointer;
+}
+.btn-watch:hover {
+  background-color: #ccc;
+}
+.basicLightbox--visible.teams-is-hidden .btn-watch {
+  display: none;
+}
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

@@ -1,0 +1,22 @@
+<svg version="1.2"  xmlns="http://www.w3.org/2000/svg">
+	<symbol id="plus"  viewBox="0 0 39 39" >
+		<defs>
+			<image id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAALBJREFUWEftmDEOwjAQBOc6HoJo6ZCowit4C++h5DW8hQ5SLA2RgiWIcgdSinV9uzqPvSfLwQ+WpC1wbaxWEXGv2EdFPGjdXJaiyZncDAJO6wxYb6UmZ3KfCHgIZ++GyS2O3OtIsn0Nug1waUx2wKNiHJJUMfin1s1l6S6e3D67s5FuDZwbnw7oK95+lWTpmZzJ+T03IuBAOBAOhAMB/hOenASSjsCpKTxExG1S/KXgCXW6v3qmu3mEAAAAAElFTkSuQmCC"/>
+		</defs>
+		<g id="FF">
+			<g id="Hotspot">
+				<use id="Plus sign" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</symbol>
+	<symbol id="close" viewBox="0 0 39 39" >
+		<defs>
+			<image id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAALBJREFUWEftmDEOwjAQBOc6HoJo6ZCowit4C++h5DW8hQ5SLA2RgiWIcgdSinV9uzqPvSfLwQ+WpC1wbaxWEXGv2EdFPGjdXJaiyZncDAJO6wxYb6UmZ3KfCHgIZ++GyS2O3OtIsn0Nug1waUx2wKNiHJJUMfin1s1l6S6e3D67s5FuDZwbnw7oK95+lWTpmZzJ+T03IuBAOBAOhAMB/hOenASSjsCpKTxExG1S/KXgCXW6v3qmu3mEAAAAAElFTkSuQmCC"/>
+		</defs>
+		<g id="FF">
+			<g id="Hotspot">
+				<use id="Plus sign" href="#img2" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</symbol>
+</svg>

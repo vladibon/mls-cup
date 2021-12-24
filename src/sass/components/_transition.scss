@@ -1,0 +1,115 @@
+.transition {
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.transition__bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform $transition__bg-hide;
+
+  &--left {
+    left: 0;
+    background-image: url('../images/portland_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-100vw);
+  }
+
+  &--right {
+    right: 0;
+    background-image: url('../images/dallas_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateX(100vw);
+  }
+
+  .basicLightbox--visible.teams-is-hidden & {
+    transform: translateX(0);
+    transition: transform $transition__bg-show;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 28vh;
+  transform: scale(2.5);
+  opacity: 0;
+  transition: opacity $logo-animation 7800ms, transform $logo-animation 8000ms;
+
+  &--portland {
+    left: 9.2vw;
+  }
+
+  &--dallas {
+    right: 9.2vw;
+  }
+
+  .basicLightbox--visible & {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  line-height: 0.8;
+  text-transform: uppercase;
+  color: $white-text-color;
+  filter: drop-shadow(6.691px 7.431px 16px #000000);
+  opacity: 0;
+  transition: opacity $slogan-animation-hide;
+
+  .basicLightbox--visible.teams-is-hidden & {
+    opacity: 1;
+  }
+}
+
+.one {
+  font-size: 308px;
+
+  opacity: 0;
+
+  .basicLightbox--visible & {
+    opacity: 1;
+    transition: opacity $slogan-animation 5000ms;
+  }
+}
+
+.game {
+  font-size: 218px;
+
+  opacity: 0;
+
+  .basicLightbox--visible & {
+    opacity: 1;
+    transition: opacity $slogan-animation 6000ms;
+  }
+}
+
+.glory {
+  font-size: 128px;
+
+  opacity: 0;
+
+  .basicLightbox--visible & {
+    opacity: 1;
+    transition: opacity $slogan-animation 7000ms;
+  }
+}

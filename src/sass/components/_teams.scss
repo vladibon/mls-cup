@@ -1,0 +1,169 @@
+//  Teams Frame
+.teams {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: radial-gradient(
+      circle at 63.2vw center,
+      transparent,
+      $dark-bg-color 50vw
+    ),
+    url('../images/bg-cup.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
+
+  .teams-is-hidden & {
+    display: none;
+  }
+}
+
+.triangle_black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 63.2vw solid $dark-bg-color;
+  border-right: 63.2vw solid transparent;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.8vw;
+  padding-bottom: 1.8vw;
+  padding-left: 1.6vw;
+}
+
+.main_title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+  font-weight: 800;
+  font-size: 83px;
+  text-transform: uppercase;
+}
+
+.main_title--part {
+  height: 83px;
+  padding-left: 6px;
+  padding-right: 64px;
+  margin-right: auto;
+  margin-bottom: 12px;
+  background-color: $bg-color;
+}
+
+.date {
+  margin-bottom: 26px;
+  font-size: 47px;
+  font-weight: 500;
+  color: $white-text-color;
+}
+
+.date--super {
+  margin-right: 16px;
+  font-size: 26px;
+  vertical-align: super;
+}
+
+.date--line {
+  display: inline-block;
+  width: 6px;
+  height: 36px;
+  margin-right: 16px;
+  background-color: $accent-bg-color;
+}
+
+.time {
+  font-weight: 800;
+}
+
+.tune_in {
+  width: 566px;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tune-descr,
+.tune_plus {
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $accent-bg-color;
+}
+
+.tune_plus {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.logo_cup {
+  margin-top: auto;
+}
+
+//  Button Video
+.button-video {
+  position: fixed;
+  z-index: 2;
+  top: 110px;
+  right: 250px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $white-text-color;
+  background-color: transparent;
+  filter: drop-shadow(0.209px 1.989px 1.5px rgba(0, 0, 0, 0.75));
+  border: none;
+  cursor: pointer;
+
+  .basicLightbox--visible.teams-is-hidden & {
+    display: none;
+  }
+}
+
+.button-video__circle {
+  width: 109px;
+  height: 109px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $bg-color;
+  border-radius: 50%;
+}
+
+.button-video__circle-inner {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 5px solid $bg-color;
+  border-radius: 50%;
+}
+
+.button-video__icon {
+  transform: rotate(0);
+  transition: transform $animation;
+
+  .video-lightbox-open & {
+    transform: rotate(45deg);
+  }
+}
