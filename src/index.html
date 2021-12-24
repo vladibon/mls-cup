@@ -10,7 +10,7 @@
     <!-- Cup Lightbox Template -->
     <template id="cup-lightbox-template">
       <!-- Lightbox Button close -->
-      <button class="btn-close btn-close-js">
+      <button class="btn-close">
         <span class="btn-close__circle">
           <svg class="btn-close__icon" width="22" height="22">
             <use href="images/icons.svg#close"></use>
@@ -18,19 +18,16 @@
         </span>
       </button>
 
-      <!-- Button watch -->
-      <button class="btn-watch btn-watch-js" type="button">Play</button>
-
-      <!-- Button Video -->
-      <button class="button-video button-video-js" type="button">
-        <span class="button-video__circle">
-          <span class="button-video__circle-inner">
-            <svg class="button-video__icon" width="39" height="39">
+      <!-- Button watch video -->
+      <button class="btn-video" type="button">
+        <span class="btn-video__circle">
+          <span class="btn-video__circle-inner">
+            <svg class="btn-video__icon" width="39" height="39">
               <use href="images/icons.svg#plus"></use>
             </svg>
           </span>
         </span>
-        Watch TV spot
+        <span class="button-video__text">Watch TV spot</span>
       </button>
 
       <!-- Transition Frame -->
@@ -38,7 +35,7 @@
         <div class="transition__bg transition__bg--left">
           <img
             class="logo logo--portland"
-            src="./images/portland-logo.png"
+            src="./images/logo-portland.png"
             alt="Portland team logo"
             width="403"
             height="403"
@@ -48,7 +45,7 @@
         <div class="transition__bg transition__bg--right">
           <img
             class="logo logo--dallas"
-            src="./images/dallas-logo.png"
+            src="./images/logo-dallas.png"
             alt="Dallas team logo"
             width="403"
             height="403"
@@ -64,46 +61,48 @@
 
       <!-- Teams Frame -->
       <div class="teams">
-        <div class="triangle_black"></div>
+        <div class="triangle-black"></div>
 
         <div class="content">
-          <h2 class="main_title">
-            <span class="main_title--part">Portland Timbers</span>
-            <span class="main_title--part">vs</span>
-            <span class="main_title--part">FC Dallas</span>
+          <h2 class="teams-title">
+            <span>Portland Timbers</span>
+            <span>vs</span>
+            <span>FC Dallas</span>
           </h2>
 
           <p class="date">
             December 6
-            <span class="date--super">th</span>
-            <span class="date--line"></span>
+            <span class="date__super">th</span>
+            <span class="decor"></span>
             <span class="time">3PM ET</span>
           </p>
 
-          <p class="tune_in">
+          <p class="tune-in">
             <span class="tune-descr">Live on</span>
 
+            <!-- temporary fragment -->
             <img
-              src="./images/tune_in_fs1.png"
-              alt="tune in"
+              src="./images/tune-in-fragment-1.png"
+              alt="fs1"
               width="129"
               height="57"
             />
+            <span class="tune-in__plus">+</span>
 
-            <span class="tune_plus">+</span>
-
+            <!-- temporary fragment -->
             <img
-              src="./images/tune_in_uni.png"
-              alt="tune in"
+              src="./images/tune-in-fragment-2.png"
+              alt=""
               width="157"
               height="57"
             />
           </p>
 
+          <!-- MLS Cup logo -->
           <img
-            class="logo_cup"
-            src="./images/logo_cup.png"
-            alt="MLS Cup"
+            class="logo-cup"
+            src="./images/logo-cup.png"
+            alt="MLS Cup logo"
             width="437"
             height="366"
           />
@@ -132,8 +131,19 @@
       <!-- Video Lightbox -->
       <div class="video-lightbox">
         <video id="video">
-          <source src="./images/video.mp4" type="video/mp4" />
+          <source src="./video/video.mp4" type="video/mp4" />
         </video>
+
+        <!-- Button play -->
+        <button class="btn-play" type="button">
+          <span class="btn-play__circle">
+            <span class="btn-play__circle-inner">
+              <svg class="btn-play__icon" width="56" height="56">
+                <use href="images/icons.svg#play"></use>
+              </svg>
+            </span>
+          </span>
+        </button>
       </div>
     </template>
 

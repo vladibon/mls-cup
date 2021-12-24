@@ -200,7 +200,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/DINNextLTPro-Heavy.woff":[["DINNextLTPro-Heavy.257b3456.woff","fonts/DINNextLTPro-Heavy.woff"],"fonts/DINNextLTPro-Heavy.woff"],"./../fonts/DINNextLTPro-Bold.woff":[["DINNextLTPro-Bold.385881f2.woff","fonts/DINNextLTPro-Bold.woff"],"fonts/DINNextLTPro-Bold.woff"],"./../fonts/DINNextLTPro-Medium.woff":[["DINNextLTPro-Medium.e79bad02.woff","fonts/DINNextLTPro-Medium.woff"],"fonts/DINNextLTPro-Medium.woff"],"./../fonts/DINNextLTPro-Regular.woff":[["DINNextLTPro-Regular.76df5605.woff","fonts/DINNextLTPro-Regular.woff"],"fonts/DINNextLTPro-Regular.woff"],"./../images/desktop_bg.jpg":[["desktop_bg.410107bd.jpg","images/desktop_bg.jpg"],"images/desktop_bg.jpg"],"./../images/portland_bg.png":[["portland_bg.93071424.png","images/portland_bg.png"],"images/portland_bg.png"],"./../images/dallas_bg.png":[["dallas_bg.c0c236c8.png","images/dallas_bg.png"],"images/dallas_bg.png"],"./../images/bg-cup.jpg":[["bg-cup.665e8615.jpg","images/bg-cup.jpg"],"images/bg-cup.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/basiclightbox/dist/basicLightbox.min.js":[function(require,module,exports) {
+},{"./../fonts/DINNextLTPro-Heavy.woff":[["DINNextLTPro-Heavy.257b3456.woff","fonts/DINNextLTPro-Heavy.woff"],"fonts/DINNextLTPro-Heavy.woff"],"./../fonts/DINNextLTPro-Bold.woff":[["DINNextLTPro-Bold.385881f2.woff","fonts/DINNextLTPro-Bold.woff"],"fonts/DINNextLTPro-Bold.woff"],"./../fonts/DINNextLTPro-Medium.woff":[["DINNextLTPro-Medium.e79bad02.woff","fonts/DINNextLTPro-Medium.woff"],"fonts/DINNextLTPro-Medium.woff"],"./../fonts/DINNextLTPro-Regular.woff":[["DINNextLTPro-Regular.76df5605.woff","fonts/DINNextLTPro-Regular.woff"],"fonts/DINNextLTPro-Regular.woff"],"./../images/bg-desktop.jpg":[["bg-desktop.a1a3b37d.jpg","images/bg-desktop.jpg"],"images/bg-desktop.jpg"],"./../images/bg-portland.png":[["bg-portland.1924ac64.png","images/bg-portland.png"],"images/bg-portland.png"],"./../images/bg-dallas.png":[["bg-dallas.a48d2ade.png","images/bg-dallas.png"],"images/bg-dallas.png"],"./../images/bg-cup.jpg":[["bg-cup.665e8615.jpg","images/bg-cup.jpg"],"images/bg-cup.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/basiclightbox/dist/basicLightbox.min.js":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 !function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{("undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this).basicLightbox=e()}}((function(){return function e(n,t,o){function r(c,u){if(!t[c]){if(!n[c]){var s="function"==typeof require&&require;if(!u&&s)return s(c,!0);if(i)return i(c,!0);var a=new Error("Cannot find module '"+c+"'");throw a.code="MODULE_NOT_FOUND",a}var l=t[c]={exports:{}};n[c][0].call(l.exports,(function(e){return r(n[c][1][e]||e)}),l,l.exports,e,n,t,o)}return t[c].exports}for(var i="function"==typeof require&&require,c=0;c<o.length;c++)r(o[c]);return r}({1:[function(e,n,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.create=t.visible=void 0;var o=function(e){var n=arguments.length>1&&void 0!==arguments[1]&&arguments[1],t=document.createElement("div");return t.innerHTML=e.trim(),!0===n?t.children:t.firstChild},r=function(e,n){var t=e.children;return 1===t.length&&t[0].tagName===n},i=function(e){return null!=(e=e||document.querySelector(".basicLightbox"))&&!0===e.ownerDocument.body.contains(e)};t.visible=i;t.create=function(e,n){var t=function(e,n){var t=o('\n\t\t<div class="basicLightbox '.concat(n.className,'">\n\t\t\t<div class="basicLightbox__placeholder" role="dialog"></div>\n\t\t</div>\n\t')),i=t.querySelector(".basicLightbox__placeholder");e.forEach((function(e){return i.appendChild(e)}));var c=r(i,"IMG"),u=r(i,"VIDEO"),s=r(i,"IFRAME");return!0===c&&t.classList.add("basicLightbox--img"),!0===u&&t.classList.add("basicLightbox--video"),!0===s&&t.classList.add("basicLightbox--iframe"),t}(e=function(e){var n="string"==typeof e,t=e instanceof HTMLElement==1;if(!1===n&&!1===t)throw new Error("Content must be a DOM element/node or string");return!0===n?Array.from(o(e,!0)):"TEMPLATE"===e.tagName?[e.content.cloneNode(!0)]:Array.from(e.children)}(e),n=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(null==(e=Object.assign({},e)).closable&&(e.closable=!0),null==e.className&&(e.className=""),null==e.onShow&&(e.onShow=function(){}),null==e.onClose&&(e.onClose=function(){}),"boolean"!=typeof e.closable)throw new Error("Property `closable` must be a boolean");if("string"!=typeof e.className)throw new Error("Property `className` must be a string");if("function"!=typeof e.onShow)throw new Error("Property `onShow` must be a function");if("function"!=typeof e.onClose)throw new Error("Property `onClose` must be a function");return e}(n)),c=function(e){return!1!==n.onClose(u)&&function(e,n){return e.classList.remove("basicLightbox--visible"),setTimeout((function(){return!1===i(e)||e.parentElement.removeChild(e),n()}),410),!0}(t,(function(){if("function"==typeof e)return e(u)}))};!0===n.closable&&t.addEventListener("click",(function(e){e.target===t&&c()}));var u={element:function(){return t},visible:function(){return i(t)},show:function(e){return!1!==n.onShow(u)&&function(e,n){return document.body.appendChild(e),setTimeout((function(){requestAnimationFrame((function(){return e.classList.add("basicLightbox--visible"),n()}))}),10),!0}(t,(function(){if("function"==typeof e)return e(u)}))},close:c};return u}},{}]},{},[1])(1)}));
@@ -238,33 +238,54 @@ setTimeout(function () {
       return window.removeEventListener('keydown', onKeydown);
     }
   });
-  preventPageScroll();
   cupLightbox.show();
-  document.querySelector('.btn-close-js').addEventListener('click', cupLightbox.close);
-  document.querySelector('.button-video-js').addEventListener('click', toggleVideoLightbox);
+  togglePageScroll();
+  var cupLightboxRef = cupLightbox.element();
+  var closeBtnRef = document.querySelector('.btn-close');
+  var videoBtnRef = document.querySelector('.btn-video');
+  closeBtnRef.addEventListener('click', closeCupLightbox);
+  videoBtnRef.addEventListener('click', toggleVideoLightbox);
   setTimeout(function () {
-    cupLightbox.element().classList.toggle('teams-is-hidden');
+    cupLightboxRef.classList.toggle('teams-is-hidden');
   }, 1000);
 
   function onKeydown(_ref) {
     var code = _ref.code;
     if (code !== 'Escape') return;
+    closeCupLightbox();
+  }
+
+  function closeCupLightbox() {
     cupLightbox.close();
+    togglePageScroll();
+  }
+
+  function togglePageScroll() {
+    document.body.classList.toggle('lightbox-open');
+  }
+
+  function toggleVideoLightbox() {
+    cupLightboxRef.classList.toggle('video-is-open');
+    var playBtnRef = document.querySelector('.btn-play');
+    playBtnRef.addEventListener('click', onPlayVideo, false);
+
+    function onPlayVideo() {
+      var videoRef = document.querySelector('#video');
+      videoRef.play();
+      toggleVideoPlay();
+      videoRef.addEventListener('click', onPauseVideo);
+
+      function onPauseVideo() {
+        videoRef.pause();
+        toggleVideoPlay();
+      }
+    }
+
+    function toggleVideoPlay() {
+      playBtnRef.classList.toggle('video-is-playing');
+    }
   }
 }, 1000);
-
-function preventPageScroll() {
-  document.body.classList.add('lightbox-open');
-} //
-
-
-function toggleVideoLightbox() {
-  document.querySelector('.button-video-js').classList.toggle('video-lightbox-open');
-  document.querySelector('.video-lightbox').classList.toggle('video-lightbox--open');
-  document.querySelector('.btn-watch-js').addEventListener('click', function () {
-    document.querySelector('#video').play();
-  }, false);
-}
 },{"basiclightbox":"../node_modules/basiclightbox/dist/basicLightbox.min.js","./refs":"js/refs.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -303,7 +324,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57491" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54976" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

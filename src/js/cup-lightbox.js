@@ -8,46 +8,57 @@ setTimeout(() => {
     onClose: () => window.removeEventListener('keydown', onKeydown),
   });
 
-  preventPageScroll();
   cupLightbox.show();
+  togglePageScroll();
 
-  document
-    .querySelector('.btn-close-js')
-    .addEventListener('click', cupLightbox.close);
+  const cupLightboxRef = cupLightbox.element();
+  const closeBtnRef = document.querySelector('.btn-close');
+  const videoBtnRef = document.querySelector('.btn-video');
 
-  document
-    .querySelector('.button-video-js')
-    .addEventListener('click', toggleVideoLightbox);
+  closeBtnRef.addEventListener('click', closeCupLightbox);
+  videoBtnRef.addEventListener('click', toggleVideoLightbox);
 
   setTimeout(() => {
-    cupLightbox.element().classList.toggle('teams-is-hidden');
+    cupLightboxRef.classList.toggle('teams-is-hidden');
   }, 1000);
 
   function onKeydown({ code }) {
     if (code !== 'Escape') return;
+    closeCupLightbox();
+  }
+
+  function closeCupLightbox() {
     cupLightbox.close();
+    togglePageScroll();
+  }
+
+  function togglePageScroll() {
+    document.body.classList.toggle('lightbox-open');
+  }
+
+  function toggleVideoLightbox() {
+    cupLightboxRef.classList.toggle('video-is-open');
+
+    const playBtnRef = document.querySelector('.btn-play');
+
+    playBtnRef.addEventListener('click', onPlayVideo, false);
+
+    function onPlayVideo() {
+      const videoRef = document.querySelector('#video');
+
+      videoRef.play();
+      toggleVideoPlay();
+
+      videoRef.addEventListener('click', onPauseVideo);
+
+      function onPauseVideo() {
+        videoRef.pause();
+        toggleVideoPlay();
+      }
+    }
+
+    function toggleVideoPlay() {
+      playBtnRef.classList.toggle('video-is-playing');
+    }
   }
 }, 1000);
-
-function preventPageScroll() {
-  document.body.classList.add('lightbox-open');
-}
-
-//
-function toggleVideoLightbox() {
-  document
-    .querySelector('.button-video-js')
-    .classList.toggle('video-lightbox-open');
-
-  document
-    .querySelector('.video-lightbox')
-    .classList.toggle('video-lightbox--open');
-
-  document.querySelector('.btn-watch-js').addEventListener(
-    'click',
-    function () {
-      document.querySelector('#video').play();
-    },
-    false,
-  );
-}

@@ -9,6 +9,7 @@
 			</g>
 		</g>
 	</symbol>
+	
 	<symbol id="close" viewBox="0 0 39 39" >
 		<defs>
 			<image id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAALBJREFUWEftmDEOwjAQBOc6HoJo6ZCowit4C++h5DW8hQ5SLA2RgiWIcgdSinV9uzqPvSfLwQ+WpC1wbaxWEXGv2EdFPGjdXJaiyZncDAJO6wxYb6UmZ3KfCHgIZ++GyS2O3OtIsn0Nug1waUx2wKNiHJJUMfin1s1l6S6e3D67s5FuDZwbnw7oK95+lWTpmZzJ+T03IuBAOBAOhAMB/hOenASSjsCpKTxExG1S/KXgCXW6v3qmu3mEAAAAAElFTkSuQmCC"/>
@@ -19,4 +20,14 @@
 			</g>
 		</g>
 	</symbol>
+
+	<symbol id="play" fill="#ffffff" viewBox="0 0 32 32">
+    <path d="M6 4l20 12-20 12z"></path>
+  </symbol>
+
+  <symbol id="pause" fill="#ffffff" viewBox="0 0 32 32">
+    <title>pause2</title>
+    <path d="M4 4h10v24h-10zM18 4h10v24h-10z"></path>
+  </symbol>
+
 </svg>

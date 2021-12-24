@@ -1,0 +1,62 @@
+//  Button watch video
+.btn-video {
+  position: fixed;
+  z-index: 2;
+  top: 110px;
+  right: 250px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $white-text-color;
+  background-color: transparent;
+  border: none;
+  filter: $button-video-shadow;
+  cursor: pointer;
+
+  .basicLightbox--visible.teams-is-hidden & {
+    display: none;
+  }
+}
+
+.btn-video__circle {
+  @extend %flexCenter;
+  width: 109px;
+  height: 109px;
+  margin-bottom: 14px;
+  border: 3px solid $bg-color;
+  border-radius: 50%;
+}
+
+.btn-video__circle-inner {
+  @extend %flexCenter;
+  width: 88px;
+  height: 88px;
+  background-color: $backdrop-color;
+  border: 5px solid $bg-color;
+  border-radius: 50%;
+}
+
+.btn-video__icon {
+  transform: rotate(0);
+  transition: transform $animation;
+
+  .video-is-open & {
+    transform: rotate(135deg);
+  }
+}
+
+.button-video__text {
+  opacity: 1;
+  transition: opacity $animation;
+
+  .video-is-open & {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

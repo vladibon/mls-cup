@@ -1,0 +1,28 @@
+//  Lightbox Button close
+.btn-close {
+  @extend %flexCenter;
+  position: fixed;
+  z-index: 5;
+  top: 10px;
+  right: 14px;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid $bg-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-close__circle {
+  @extend %flexCenter;
+  width: 44px;
+  height: 44px;
+  background-color: $backdrop-color;
+  border: 2px solid $bg-color;
+  border-radius: 50%;
+}
+
+.btn-close__icon {
+  transform: rotate(45deg);
+}

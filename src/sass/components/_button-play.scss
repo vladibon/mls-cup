@@ -1,0 +1,37 @@
+//  Button play video
+.btn-play {
+  @extend %flexCenter;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white-text-color;
+  background-color: transparent;
+  border: none;
+  filter: $button-video-shadow;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity $animation;
+
+  &.video-is-playing {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.btn-play__circle {
+  @extend %flexCenter;
+  width: 160px;
+  height: 160px;
+  border: 3px solid $bg-color;
+  border-radius: 50%;
+}
+
+.btn-play__circle-inner {
+  @extend %flexCenter;
+  width: 128px;
+  height: 128px;
+  background-color: $backdrop-color;
+  border: 5px solid $bg-color;
+  border-radius: 50%;
+}

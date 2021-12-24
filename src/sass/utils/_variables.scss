@@ -9,9 +9,11 @@ $white-text-color: #ffffff;
 $bg-color: #ffffff;
 $dark-bg-color: #000000;
 $accent-bg-color: #d0ad68;
-$backdrop-color: rgba(0, 0, 0, 0.7);
+$backdrop-color: rgba(0, 0, 0, 0.6);
 
 // Shadows
+$slogan-drop-shadow: drop-shadow(6.691px 7.431px 16px $dark-bg-color);
+$button-video-shadow: drop-shadow(0.209px 1.989px 1.5px rgba(0, 0, 0, 0.75));
 
 //  Animation
 $animation: 600ms cubic-bezier(0.4, 0, 0.2, 1);

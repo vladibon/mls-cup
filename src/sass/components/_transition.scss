@@ -11,23 +11,20 @@
   top: 0;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   transition: transform $transition__bg-hide;
 
   &--left {
     left: 0;
-    background-image: url('../images/portland_bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url('../images/bg-portland.png');
     transform: translateX(-100vw);
   }
 
   &--right {
     right: 0;
-    background-image: url('../images/dallas_bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url('../images/bg-dallas.png');
     transform: translateX(100vw);
   }
 
@@ -40,8 +37,8 @@
 .logo {
   position: absolute;
   top: 28vh;
-  transform: scale(2.5);
   opacity: 0;
+  transform: scale(2.5);
   transition: opacity $logo-animation 7800ms, transform $logo-animation 8000ms;
 
   &--portland {
@@ -64,15 +61,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  display: flex;
+  @extend %flexCenter;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   font-weight: 800;
   line-height: 0.8;
   text-transform: uppercase;
   color: $white-text-color;
-  filter: drop-shadow(6.691px 7.431px 16px #000000);
+  filter: $slogan-drop-shadow;
   opacity: 0;
   transition: opacity $slogan-animation-hide;
 
@@ -83,7 +79,6 @@
 
 .one {
   font-size: 308px;
-
   opacity: 0;
 
   .basicLightbox--visible & {
@@ -94,7 +89,6 @@
 
 .game {
   font-size: 218px;
-
   opacity: 0;
 
   .basicLightbox--visible & {
@@ -105,7 +99,6 @@
 
 .glory {
   font-size: 128px;
-
   opacity: 0;
 
   .basicLightbox--visible & {

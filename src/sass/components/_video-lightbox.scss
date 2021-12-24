@@ -1,38 +1,16 @@
 .video-lightbox {
+  @extend %flexCenter;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: $backdrop-color;
-  overflow-y: scroll;
   opacity: 0;
   transition: opacity $animation;
-  pointer-events: none;
 
-  &--open {
+  .video-is-open & {
     opacity: 1;
-  }
-}
-
-.btn-watch {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 5;
-  width: 152px;
-  height: 152px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #ccc;
-  }
-
-  .basicLightbox--visible.teams-is-hidden & {
-    display: none;
   }
 }
