@@ -20,7 +20,7 @@ setTimeout(() => {
 
   setTimeout(() => {
     cupLightboxRef.classList.toggle('teams-is-hidden');
-  }, 1000);
+  }, 10000);
 
   function onKeydown({ code }) {
     if (code !== 'Escape') return;

@@ -247,7 +247,7 @@ setTimeout(function () {
   videoBtnRef.addEventListener('click', toggleVideoLightbox);
   setTimeout(function () {
     cupLightboxRef.classList.toggle('teams-is-hidden');
-  }, 1000);
+  }, 10000);
 
   function onKeydown(_ref) {
     var code = _ref.code;
