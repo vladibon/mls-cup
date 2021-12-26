@@ -349,6 +349,10 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+# Nuxt.js build / generate output
+.nuxt
+dist
+
 # misc
 .DS_Store
 .vscode
