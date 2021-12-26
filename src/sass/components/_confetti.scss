@@ -1,5 +1,70 @@
-.canvas {
-  width: 30px;
-  height: 30px;
-  background-color: $accent-bg-color;
+.confetti-group {
+  position: relative;
+  display: inline-block;
+  width: 24.5%;
+}
+
+.confetti {
+  position: absolute;
+  bottom: -20vh;
+  z-index: 1000;
+  animation-duration: 7400ms;
+  animation-timing-function: ease-in-out;
+}
+
+.large {
+  left: 50%;
+  animation-delay: 50ms;
+}
+
+.medium {
+  left: calc(50% - 5vw);
+  animation-delay: 210ms;
+}
+
+.small {
+  left: calc(50% + 5vw);
+  animation-delay: 370ms;
+}
+
+.right {
+  animation-name: moveConfettiRight;
+}
+
+.left {
+  animation-name: moveConfettiLeft;
+}
+
+@keyframes moveConfettiRight {
+  0% {
+    transform: translate(0, 0) rotate3d(1, 1, 1, 0);
+    transform-origin: top left;
+  }
+
+  25% {
+    transform: translate(5vw, -125vh) rotate3d(1, 1, 1, 1740deg);
+    transform-origin: top left;
+  }
+
+  100% {
+    transform: translate(10vw, 0) rotate3d(1, 1, 1, 3180deg);
+    transform-origin: top left;
+  }
+}
+
+@keyframes moveConfettiLeft {
+  0% {
+    transform: translate(0, 0) rotate3d(1, 1, 1, 0);
+    transform-origin: top left;
+  }
+
+  20% {
+    transform: translate(-5vw, -135vh) rotate3d(1, 1, 1, 1740deg);
+    transform-origin: top left;
+  }
+
+  100% {
+    transform: translate(-10vw, 0) rotate3d(1, 1, 1, 3180deg);
+    transform-origin: top left;
+  }
 }

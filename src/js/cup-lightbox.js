@@ -25,7 +25,7 @@ function openCupLightbox() {
   refs.videoOverlayRef.addEventListener('click', onVideoOverlayClick);
   refs.playBtnRef.addEventListener('click', onPlayVideo, { once: true });
 
-  setTimeout(() => setTeamsFrame(), 10000);
+  setTimeout(() => setTeamsFrame(), 11000);
 
   function onKeydown({ code }) {
     if (code !== 'Escape') return;

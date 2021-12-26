@@ -39,7 +39,7 @@
   top: 28vh;
   opacity: 0;
   transform: scale(2.5);
-  transition: opacity $logo-animation 7800ms, transform $logo-animation 8000ms;
+  transition: opacity $logo-animation 9200ms, transform $logo-animation 9400ms;
 
   &--portland {
     left: 9.2vw;
@@ -83,7 +83,7 @@
 
   .basicLightbox--visible & {
     opacity: 1;
-    transition: opacity $slogan-animation 5000ms;
+    transition: opacity $slogan-animation 6400ms;
   }
 }
 
@@ -93,7 +93,7 @@
 
   .basicLightbox--visible & {
     opacity: 1;
-    transition: opacity $slogan-animation 6000ms;
+    transition: opacity $slogan-animation 7400ms;
   }
 }
 
@@ -103,6 +103,6 @@
 
   .basicLightbox--visible & {
     opacity: 1;
-    transition: opacity $slogan-animation 7000ms;
+    transition: opacity $slogan-animation 8400ms;
   }
 }
