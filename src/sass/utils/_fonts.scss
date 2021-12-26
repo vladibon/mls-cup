@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'DINNextLTPro';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('DINNextLTPro Heavy'), local('DINNextLTPro-Heavy'),
+    url(../fonts/DINNextLTPro-Heavy.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('DINNextLTPro Bold'), local('DINNextLTPro-Bold'),
+    url(../fonts/DINNextLTPro-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('DINNextLTPro Medium'), local('DINNextLTPro-Medium'),
+    url(../fonts/DINNextLTPro-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'DINNextLTPro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('DINNextLTPro Regular'), local('DINNextLTPro-Regular'),
+    url(../fonts/DINNextLTPro-Regular.woff) format('woff');
+}
