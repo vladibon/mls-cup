@@ -19,7 +19,6 @@
   "homepage": "https://vladibon.github.io/mls-cup/",
   "dependencies": {
     "basiclightbox": "^5.0.4",
-    "canvas-confetti": "^1.4.0",
     "modern-normalize": "^1.1.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-nuke-dist": "^1.0.1",
