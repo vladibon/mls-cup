@@ -36,10 +36,28 @@
 
 .logo {
   position: absolute;
-  top: 28vh;
+  top: 40vh;
+  width: 68px;
+  height: 68px;
   opacity: 0;
   transform: scale(2.5);
   transition: opacity $logo-animation 9200ms, transform $logo-animation 9400ms;
+
+  @include respond-above($tablet) {
+    width: 120px;
+    height: 120px;
+  }
+
+  @include respond-above($desktop) {
+    top: 28vh;
+    width: 200px;
+    height: 200px;
+  }
+
+  @include respond-above($wide-desktop) {
+    width: 403px;
+    height: 403px;
+  }
 
   &--portland {
     left: 9.2vw;
@@ -78,8 +96,20 @@
 }
 
 .one {
-  font-size: 308px;
+  font-size: 72px;
   opacity: 0;
+
+  @include respond-above($tablet) {
+    font-size: 155px;
+  }
+
+  @include respond-above($desktop) {
+    font-size: 208px;
+  }
+
+  @include respond-above($wide-desktop) {
+    font-size: 308px;
+  }
 
   .basicLightbox--visible & {
     opacity: 1;
@@ -88,8 +118,20 @@
 }
 
 .game {
-  font-size: 218px;
+  font-size: 51px;
   opacity: 0;
+
+  @include respond-above($tablet) {
+    font-size: 110px;
+  }
+
+  @include respond-above($desktop) {
+    font-size: 146px;
+  }
+
+  @include respond-above($wide-desktop) {
+    font-size: 218px;
+  }
 
   .basicLightbox--visible & {
     opacity: 1;
@@ -98,8 +140,20 @@
 }
 
 .glory {
-  font-size: 128px;
+  font-size: 30px;
   opacity: 0;
+
+  @include respond-above($tablet) {
+    font-size: 65px;
+  }
+
+  @include respond-above($desktop) {
+    font-size: 86px;
+  }
+
+  @include respond-above($wide-desktop) {
+    font-size: 128px;
+  }
 
   .basicLightbox--visible & {
     opacity: 1;

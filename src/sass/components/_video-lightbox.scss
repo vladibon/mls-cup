@@ -18,5 +18,14 @@
 }
 
 #video {
+  width: 1280px;
   outline: none;
+
+  @include respond-below($wide-desktop) {
+    max-width: calc(100% - 240px);
+  }
+
+  @include respond-below($tablet) {
+    max-width: calc(100% - 100px);
+  }
 }

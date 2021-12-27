@@ -8,7 +8,7 @@
   position: absolute;
   bottom: -20vh;
   z-index: 1000;
-  animation-duration: 7400ms;
+  animation-duration: 7200ms;
   animation-timing-function: ease-in-out;
 }
 
@@ -42,12 +42,12 @@
   }
 
   25% {
-    transform: translate(5vw, -125vh) rotate3d(1, 1, 1, 1740deg);
+    transform: translate(5vw, -130vh) rotate3d(1, 1, 1, 1800deg);
     transform-origin: top left;
   }
 
   100% {
-    transform: translate(10vw, 0) rotate3d(1, 1, 1, 3180deg);
+    transform: translate(10vw, 0) rotate3d(1, 1, 1, 3600deg);
     transform-origin: top left;
   }
 }
@@ -55,16 +55,16 @@
 @keyframes moveConfettiLeft {
   0% {
     transform: translate(0, 0) rotate3d(1, 1, 1, 0);
-    transform-origin: top left;
+    transform-origin: top right;
   }
 
-  20% {
-    transform: translate(-5vw, -135vh) rotate3d(1, 1, 1, 1740deg);
-    transform-origin: top left;
+  25% {
+    transform: translate(-7vw, -135vh) rotate3d(1, 1, 1, 2160deg);
+    transform-origin: top right;
   }
 
   100% {
-    transform: translate(-10vw, 0) rotate3d(1, 1, 1, 3180deg);
-    transform-origin: top left;
+    transform: translate(-14vw, 0) rotate3d(1, 1, 1, 4320deg);
+    transform-origin: top right;
   }
 }

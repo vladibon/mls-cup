@@ -25,6 +25,12 @@
   height: 160px;
   border: 3px solid $bg-color;
   border-radius: 50%;
+
+  @include respond-below($tablet) {
+    max-width: 80px;
+    max-height: 80px;
+    border-width: 1px;
+  }
 }
 
 .btn-play__circle-inner {
@@ -34,4 +40,20 @@
   background-color: $backdrop-color;
   border: 5px solid $bg-color;
   border-radius: 50%;
+
+  @include respond-below($tablet) {
+    max-width: 70px;
+    max-height: 70px;
+    border-width: 3px;
+  }
+}
+
+.btn-play__icon {
+  width: 56px;
+  height: 56px;
+
+  @include respond-below($tablet) {
+    width: 30px;
+    height: 30px;
+  }
 }

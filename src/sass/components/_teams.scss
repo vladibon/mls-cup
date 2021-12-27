@@ -27,6 +27,16 @@
   height: 0;
   border-top: 63.2vw solid $dark-bg-color;
   border-right: 63.2vw solid transparent;
+
+  @include respond-below($wide-desktop) {
+    border-top-width: 75vw;
+    border-right-width: 75vw;
+  }
+
+  @include respond-below($desktop) {
+    border-top-width: 90vw;
+    border-right-width: 90vw;
+  }
 }
 
 .content {
@@ -50,6 +60,18 @@
   font-size: 83px;
   text-transform: uppercase;
 
+  @include respond-below($desktop) {
+    font-size: 67px;
+  }
+
+  @include respond-below($tablet) {
+    font-size: 36px;
+  }
+
+  @include respond-below($mobile) {
+    font-size: 26px;
+  }
+
   & span {
     height: 83px;
     padding-left: 6px;
@@ -57,6 +79,18 @@
     margin-right: auto;
     margin-bottom: 12px;
     background-color: $bg-color;
+
+    @include respond-below($desktop) {
+      height: 67px;
+    }
+
+    @include respond-below($tablet) {
+      height: 36px;
+    }
+
+    @include respond-below($mobile) {
+      height: 26px;
+    }
   }
 }
 
@@ -65,12 +99,24 @@
   font-size: 47px;
   font-weight: 500;
   color: $white-text-color;
+
+  @include respond-below($desktop) {
+    font-size: 30px;
+  }
+
+  @include respond-below($tablet) {
+    font-size: 24px;
+  }
 }
 
 .date__super {
   margin-right: 16px;
   font-size: 26px;
   vertical-align: super;
+
+  @include respond-below($tablet) {
+    font-size: 20px;
+  }
 }
 
 .decor {
@@ -92,12 +138,20 @@
   align-items: center;
   justify-content: space-between;
 
+  @include respond-below($tablet) {
+    max-width: 366px;
+  }
+
   & span {
     display: block;
     font-size: 50px;
     font-weight: 400;
     text-transform: uppercase;
     color: $accent-bg-color;
+
+    @include respond-below($tablet) {
+      font-size: 30px;
+    }
 
     &.tune-in__plus {
       font-size: 40px;
