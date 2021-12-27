@@ -1,23 +1,23 @@
 import { getConfettiRefs } from './refs';
 
-function runConfetti() {
-  const refs = getConfettiRefs();
+const confetti = {
+  intervalId: null,
+  run: () => {
+    const refs = getConfettiRefs();
+    const confettiFragment = document.createDocumentFragment();
+    const confettiGroup = document.createElement('div');
+    confettiGroup.innerHTML = refs.confettiGroupTemplate.innerHTML;
+    confettiGroup.className = 'confetti-group';
 
-  const confettiFragment = document.createDocumentFragment();
+    confetti.intervalId = setInterval(() => {
+      for (let i = 0; i < 4; i += 1) {
+        confettiFragment.appendChild(confettiGroup.cloneNode(true));
+      }
 
-  const confettiGroup = document.createElement('div');
-  confettiGroup.innerHTML = refs.confettiGroupTemplate.innerHTML;
-  confettiGroup.className = 'confetti-group';
+      refs.confettiContainerRef.prepend(confettiFragment);
+    }, 500);
+  },
+  stop: () => clearInterval(confetti.intervalId),
+};
 
-  const intervalId = setInterval(() => {
-    for (let index = 0; index < 4; index++) {
-      confettiFragment.appendChild(confettiGroup.cloneNode(true));
-    }
-
-    refs.confettiContainerRef.prepend(confettiFragment);
-  }, 500);
-
-  setTimeout(() => clearInterval(intervalId), 5000);
-}
-
-export { runConfetti };
+export { confetti };
