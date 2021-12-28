@@ -1,5 +1,4 @@
 .video-overlay {
-  @extend %flexCenter;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -10,6 +9,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity $animation;
+  overflow-y: scroll;
 
   .video-is-open & {
     opacity: 1;
@@ -17,15 +17,20 @@
   }
 }
 
-#video {
-  width: 1280px;
-  outline: none;
+.video-box {
+  position: absolute;
+  top: 44vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1188px;
+  max-width: calc(100% - 100px);
 
-  @include respond-below($wide-desktop) {
+  @include respond-above($tablet) {
     max-width: calc(100% - 240px);
   }
 
-  @include respond-below($tablet) {
-    max-width: calc(100% - 100px);
+  @include respond-above(1428px) {
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

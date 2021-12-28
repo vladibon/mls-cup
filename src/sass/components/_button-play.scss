@@ -1,7 +1,7 @@
 //  Button play video
 .btn-play {
   @extend %flexCenter;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
